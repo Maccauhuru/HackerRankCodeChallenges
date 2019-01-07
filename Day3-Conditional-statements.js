@@ -8,11 +8,7 @@
 // Complete the stub code provided in your editor to print whether or not is weird.
 
 
-function main() {
+const main = () => {
     const N = parseInt(readLine(), 10);
-    if (N % 2 != 0 || N % 2 == 0 && N >= 5 && N <= 20) {
-        console.log('Weird');
-    } else {
-        console.log('Not Weird');
-    }
+    console.log((N % 2 != 0 || N % 2 == 0 && N >= 5 && N <= 20) ? 'Weird' : 'Not Weird')
 }
